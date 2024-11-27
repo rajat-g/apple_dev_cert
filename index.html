@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Signing Certificate Comparison</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+            color: #333;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .company-section {
+            margin-bottom: 40px;
+        }
+
+        .company-name {
+            font-size: 1.8em;
+            color: #4CAF50;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .plans-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .plan-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .plan-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .plan-title {
+            font-size: 1.3em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .plan-price {
+            font-size: 1.6em;
+            font-weight: bold;
+            color: #FF5722;
+            margin-bottom: 15px;
+        }
+
+        .plan-features {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .plan-features li {
+            margin-bottom: 8px;
+            font-size: 1em;
+        }
+
+        .plan-button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .plan-button:hover {
+            background-color: #388E3C;
+        }
+
+        .company-link {
+            text-decoration: none;
+            color: #2196F3;
+            font-weight: bold;
+        }
+
+        .company-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Apple Signing Certificate Comparison</h1>
+
+    <div class="container">
+
+        <!-- Kravasign Section -->
+        <div class="company-section">
+            <div class="company-name">
+                <a href="https://kravasign.com/" class="company-link" target="_blank">Kravasign</a>
+            </div>
+            <div class="plans-container">
+                <div class="plan-card">
+                    <h3 class="plan-title">Standard</h3>
+                    <p class="plan-price">7 EUR</p>
+                    <ul class="plan-features">
+                        <li>1 year certificate</li>
+                        <li>30 day warranty</li>
+                        <li>1 device</li>
+                        <li>Notification + VPN Support</li>
+                    </ul>
+                    <a href="https://kravasign.com/" class="plan-button" target="_blank">Learn More</a>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Professional</h3>
+                    <p class="plan-price">14 EUR</p>
+                    <ul class="plan-features">
+                        <li>1 year certificate</li>
+                        <li>365 day warranty</li>
+                        <li>Multiple devices</li>
+                        <li>Notification + VPN Support</li>
+                    </ul>
+                    <a href="https://kravasign.com/" class="plan-button" target="_blank">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Apptesters Section -->
+        <div class="company-section">
+            <div class="company-name">
+                <a href="https://apptesters.org/" class="company-link" target="_blank">Apptesters</a>
+            </div>
+            <div class="plans-container">
+                <div class="plan-card">
+                    <h3 class="plan-title">Essential</h3>
+                    <p class="plan-price">15 USD</p>
+                    <ul class="plan-features">
+                        <li>1 year certificate</li>
+                        <li>Revoke Protection</li>
+                        <li>Notification + VPN Support</li>
+                        <li>Supported Devices: iPhone</li>
+                    </ul>
+                    <a href="https://apptesters.org/" class="plan-button" target="_blank">Learn More</a>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Premium</h3>
+                    <p class="plan-price">25 USD</p>
+                    <ul class="plan-features">
+                        <li>Lifetime certificate</li>
+                        <li>Revoke Protection</li>
+                        <li>Notification + VPN Support + Healthkit + Weatherkit + Sign in with Apple</li>
+                        <li>Supported Devices: iPhone, iPad, Apple TV, Vision Pro</li>
+                    </ul>
+                    <a href="https://apptesters.org/" class="plan-button" target="_blank">Learn More</a>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Ultimate</h3>
+                    <p class="plan-price">50 USD</p>
+                    <ul class="plan-features">
+                        <li>Lifetime certificate</li>
+                        <li>Change device up to 3 times in 5 years</li>
+                        <li>Revoke Protection</li>
+                        <li>Notification + VPN Support + Healthkit + Weatherkit + Sign in with Apple</li>
+                        <li>Supported Devices: iPhone, iPad, Apple TV, Vision Pro</li>
+                    </ul>
+                    <a href="https://apptesters.org/" class="plan-button" target="_blank">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- iOS Rocket Section -->
+        <div class="company-section">
+            <div class="company-name">
+                <a href="https://iosrocket.com/" class="company-link" target="_blank">iOS Rocket</a>
+            </div>
+            <div class="plans-container">
+                <div class="plan-card">
+                    <h3 class="plan-title">Basic Apple Signing Certificate</h3>
+                    <p class="plan-price">1200 INR / 12.99 USD</p>
+                    <ul class="plan-features">
+                        <li>Instant Activation</li>
+                        <li>1 year certificate</li>
+                        <li>Notification + VPN Support + Healthkit</li>
+                        <li>Supported Devices: iPhone, iPad, Apple Vision Pro</li>
+                    </ul>
+                    <a href="https://iosrocket.com/" class="plan-button" target="_blank">Learn More</a>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Standard Apple Signing Certificate</h3>
+                    <p class="plan-price">1500 INR / 16.99 USD</p>
+                    <ul class="plan-features">
+                        <li>Instant Activation</li>
+                        <li>1 year certificate</li>
+                        <li>Notification + VPN Support + Healthkit</li>
+                        <li>Revoke Protection 130 days</li>
+                        <li>Supported Devices: iPhone, iPad, Apple Vision Pro</li>
+                    </ul>
+                    <a href="https://iosrocket.com/" class="plan-button" target="_blank">Learn More</a>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Premium Apple Signing Certificate</h3>
+                    <p class="plan-price">2000 INR / 22.99 USD</p>
+                    <ul class="plan-features">
+                        <li>Instant Activation</li>
+                        <li>1 year certificate</li>
+                        <li>Notification + VPN Support + Healthkit</li>
+                        <li>Revoke Protection 365 days</li>
+                        <li>Supported Devices: iPhone, iPad, Apple Vision Pro</li>
+                    </ul>
+                    <a href="https://iosrocket.com/" class="plan-button" target="_blank">Learn More</a>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Ultimate Apple Signing Certificate</h3>
+                    <p class="plan-price">2500 INR / 27.99 USD</p>
+                    <ul class="plan-features">
+                        <li>Instant Activation</li>
+                        <li>Lifetime certificate</li>
+                        <li>Notification + VPN Support + Healthkit</li>
+                        <li>Lifetime revoke protection</li>
+                        <li>Supported Devices: iPhone, iPad, Apple Vision Pro</li>
+                    </ul>
+                    <a href="https://iosrocket.com/" class="plan-button" target="_blank">Learn More</a>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Permanent Lifetime Apple Signing Certificate</h3>
+                    <p class="plan-price">5100 INR / 58.99 USD</p>
+                    <ul class="plan-features">
+                        <li>Instant Activation</li>
+                        <li>Lifetime certificate</li>
+                        <li>Upto 3 Devices UDID Change</li>
+                        <li>Notification + VPN Support + Healthkit</li>
+                        <li>Lifetime revoke protection</li>
+                        <li>Supported Devices: iPhone, iPad, Apple Vision Pro</li>
+                    </ul>
+                    <a href="https://iosrocket.com/" class="plan-button" target="_blank">Learn More</a>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Everlasting Lifetime Apple Signing Certificate</h3>
+                    <p class="plan-price">13400 INR / 155 USD</p>
+                    <ul class="plan-features">
+                        <li>Instant Activation</li>
+                        <li>Lifetime certificate</li>
+                        <li>Unlimited devices</li>
+                        <li>Notification + VPN Support + Healthkit</li>
+                        <li>Lifetime revoke protection</li>
+                        <li>Supported Devices: iPhone, iPad, Apple Vision Pro</li>
+                    </ul>
+                    <a href="https://iosrocket.com/" class="plan-button" target="_blank">Learn More</a>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Non-Instant Apple Signing Certificates</h3>
+                    <p class="plan-price">800 INR / 8.99 USD</p>
+                    <ul class="plan-features">
+                        <li>1 year certificate</li>
+                        <li>Notification + VPN Support + Healthkit</li>
+                        <li>No revoke protection</li>
+                        <li>Supported Devices: iPhone, iPad, Apple Vision Pro</li>
+                    </ul>
+                    <a href="https://iosrocket.com/" class="plan-button" target="_blank">Learn More</a>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Non-Instant Apple Signing Certificates</h3>
+                    <p class="plan-price">1100 INR / 11.99 USD</p>
+                    <ul class="plan-features">
+                        <li>1 year certificate</li>
+                        <li>Notification + VPN Support + Healthkit</li>
+                        <li>130 day revoke protection</li>
+                        <li>Supported Devices: iPhone, iPad, Apple Vision Pro</li>
+                    </ul>
+                    <a href="https://iosrocket.com/" class="plan-button" target="_blank">Learn More</a>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Non-Instant Apple Signing Certificates</h3>
+                    <p class="plan-price">1300 INR / 13.99 USD</p>
+                    <ul class="plan-features">
+                        <li>1 year certificate</li>
+                        <li>Notification + VPN Support + Healthkit</li>
+                        <li>365 day revoke protection</li>
+                        <li>Supported Devices: iPhone, iPad, Apple Vision Pro</li>
+                    </ul>
+                    <a href="https://iosrocket.com/" class="plan-button" target="_blank">Learn More</a>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Non-Instant Apple Signing Certificates</h3>
+                    <p class="plan-price">1900 INR / 22 USD</p>
+                    <ul class="plan-features">
+                        <li>Lifetime certificate</li>
+                        <li>Notification + VPN Support + Healthkit</li>
+                        <li>Lifetime revoke protection</li>
+                        <li>Supported Devices: iPhone, iPad, Apple Vision Pro</li>
+                    </ul>
+                    <a href="https://iosrocket.com/" class="plan-button" target="_blank">Learn More</a>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Non-Instant Apple Signing Certificates</h3>
+                    <p class="plan-price">3900 INR / 45 USD</p>
+                    <ul class="plan-features">
+                        <li>Lifetime certificate</li>
+                        <li>Upto 3 Devices UDID Change</li>
+                        <li>Notification + VPN Support + Healthkit</li>
+                        <li>Lifetime revoke protection</li>
+                        <li>Supported Devices: iPhone, iPad, Apple Vision Pro</li>
+                    </ul>
+                    <a href="https://iosrocket.com/" class="plan-button" target="_blank">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- dxsign Section -->
+        <div class="company-section">
+            <div class="company-name">
+                <a href="https://dxsign.cc/" class="company-link" target="_blank">dxsign</a>
+            </div>
+            <div class="plans-container">
+                <div class="plan-card">
+                    <h3 class="plan-title">Basic Plan</h3>
+                    <p class="plan-price">4.99 USD</p>
+                    <ul class="plan-features">
+                        <li>1 year certificate</li>
+                        <li>Supported Devices: iPhone, iPad, macOS</li>
+                    </ul>
+                    <a href="https://dxsign.cc/" class="plan-button" target="_blank">Learn More</a>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Standard Plan</h3>
+                    <p class="plan-price">7.99 USD</p>
+                    <ul class="plan-features">
+                        <li>1 year certificate</li>
+                        <li>Revoke protection</li>
+                        <li>Supported Devices: iPhone, iPad, macOS</li>
+                    </ul>
+                    <a href="https://dxsign.cc/" class="plan-button" target="_blank">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- hertzsign Section -->
+        <div class="company-section">
+            <div class="company-name">
+                <a href="https://hertzsign.cc/" class="company-link" target="_blank">hertzsign</a>
+            </div>
+            <div class="plans-container">
+                <div class="plan-card">
+                    <h3 class="plan-title">Regular</h3>
+                    <p class="plan-price">6 USD</p>
+                    <ul class="plan-features">
+                        <li>1 year certificate</li>
+                    </ul>
+                    <a href="https://hertzsign.cc/" class="plan-button" target="_blank">Learn More</a>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Instant</h3>
+                    <p class="plan-price">10 USD</p>
+                    <ul class="plan-features">
+                        <li>1 year certificate</li>
+                    </ul>
+                    <a href="https://hertzsign.cc/" class="plan-button" target="_blank">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- signulous Section -->
+        <div class="company-section">
+            <div class="company-name">
+                <a href="https://www.signulous.com/" class="company-link" target="_blank">signulous</a>
+            </div>
+            <div class="plans-container">
+                <div class="plan-card">
+                    <h3 class="plan-title">iOS</h3>
+                    <p class="plan-price">19.99 USD</p>
+                    <ul class="plan-features">
+                        <li>1 year certificate</li>
+                        <li>Revoke protection</li>
+                    </ul>
+                    <a href="https://www.signulous.com/" class="plan-button" target="_blank">Learn More</a>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">tvOS</h3>
+                    <p class="plan-price">15.99 USD</p>
+                    <ul class="plan-features">
+                        <li>1 year certificate</li>
+                        <li>Revoke protection</li>
+                    </ul>
+                    <a href="https://www.signulous.com/" class="plan-button" target="_blank">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- applep12 Section -->
+        <div class="company-section">
+            <div class="company-name">
+                <a href="https://applep12.com/" class="company-link" target="_blank">applep12</a>
+            </div>
+            <div class="plans-container">
+                <div class="plan-card">
+                    <h3 class="plan-title">Ultimate</h3>
+                    <p class="plan-price">26 USD</p>
+                    <ul class="plan-features">
+                        <li>Instant Activation</li>
+                        <li>1 year certificate</li>
+                        <li>Revoke protection 300-360 days</li>
+                        <li>Device replacement (only once, within 180 days with Standard Plan)</li>
+                    </ul>
+                    <a href="https://applep12.com/" class="plan-button" target="_blank">Learn More</a>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Premium</h3>
+                    <p class="plan-price">20 USD</p>
+                    <ul class="plan-features">
+                        <li>Instant Activation</li>
+                        <li>1 year certificate</li>
+                        <li>Revoke protection 240 days</li>
+                        <li>Device replacement (only once, within 180 days with Basic Plan)</li>
+                    </ul>
+                    <a href="https://applep12.com/" class="plan-button" target="_blank">Learn More</a>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Custom</h3>
+                    <p class="plan-price">18 USD</p>
+                    <ul class="plan-features">
+                        <li>1 year certificate</li>
+                        <li>Revoke protection 300-360 days</li>
+                    </ul>
+                    <a href="https://applep12.com/" class="plan-button" target="_blank">Learn More</a>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Plus</h3>
+                    <p class="plan-price">16 USD</p>
+                    <ul class="plan-features">
+                        <li>Instant Activation</li>
+                        <li>1 year certificate</li>
+                        <li>Revoke protection 180 days</li>
+                    </ul>
+                    <a href="https://applep12.com/" class="plan-button" target="_blank">Learn More</a>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Standard</h3>
+                    <p class="plan-price">14 USD</p>
+                    <ul class="plan-features">
+                        <li>Instant Activation</li>
+                        <li>1 year certificate</li>
+                        <li>Revoke protection 90 days</li>
+                    </ul>
+                    <a href="https://applep12.com/" class="plan-button" target="_blank">Learn More</a>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Slow</h3>
+                    <p class="plan-price">10.88 USD</p>
+                    <ul class="plan-features">
+                        <li>1 year certificate</li>
+                        <li>Revoke protection 240 days</li>
+                        <li>Push, HealthKit, VPN Capabilities</li>
+                    </ul>
+                    <a href="https://applep12.com/" class="plan-button" target="_blank">Learn More</a>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Basic</h3>
+                    <p class="plan-price">9.88 USD</p>
+                    <ul class="plan-features">
+                        <li>Instant Activation</li>
+                        <li>1 year certificate</li>
+                        <li>Revoke protection 30 days</li>
+                    </ul>
+                    <a href="https://applep12.com/" class="plan-button" target="_blank">Learn More</a>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Started</h3>
+                    <p class="plan-price">6.88 USD</p>
+                    <ul class="plan-features">
+                        <li>1 year certificate</li>
+                        <li>Revoke protection 7 days</li>
+                    </ul>
+                    <a href="https://applep12.com/" class="plan-button" target="_blank">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- More companies (iOS Rocket, dxsign, Hertzsign, etc.) can follow similar structure -->
+
+    </div>
+
+</body>
+</html>
