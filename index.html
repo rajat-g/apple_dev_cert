@@ -147,6 +147,61 @@
         .disclaimer-date {
             color: #c62828;
         }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 70px; /* Adjust based on your nav height */
+        }
+
+        /* Company Navigation */
+        .company-nav {
+            position: sticky;
+            top: 0;
+            background: white;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            z-index: 100;
+        }
+
+        .company-nav-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .company-nav-item {
+            background: #4CAF50;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .company-nav-item a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Adjust grid for mobile */
+        @media (max-width: 768px) {
+            .plans-container {
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            }
+
+            .plan-card {
+                margin-bottom: 15px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .company-name {
+                font-size: 1.5em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -155,12 +210,27 @@
         <p class="disclaimer-date">Below prices are as of Nov 2024</p>
     </div>
 
+    <nav class="company-nav">
+        <ul class="company-nav-list">
+            <li class="company-nav-item"><a href="#kravasign">Kravasign</a></li>
+            <li class="company-nav-item"><a href="#apptesters">Apptesters</a></li>
+            
+            <li class="company-nav-item"><a href="#dxsign">dxsign</a></li>
+            <li class="company-nav-item"><a href="#hertzsign">hertzsign</a></li>
+            
+            <li class="company-nav-item"><a href="#applep12">Applep12</a></li>
+            <li class="company-nav-item"><a href="#udidregistrations">UDID Registrations</a></li>
+            <li class="company-nav-item"><a href="#signulous">Signulous</a></li>
+            <li class="company-nav-item"><a href="#iosrocket">iOS Rocket</a></li>
+        </ul>
+    </nav>
+
     <h1>Apple Signing Certificate Comparison</h1>
 
     <div class="container">
 
         <!-- Kravasign Section -->
-        <div class="company-section">
+        <div id="kravasign" class="company-section">
             <div class="company-name">
                 <a href="https://kravasign.com/" class="company-link" target="_blank">Kravasign</a>
             </div>
@@ -196,7 +266,7 @@
         </div>
 
         <!-- Apptesters Section -->
-        <div class="company-section">
+        <div id="apptesters" class="company-section">
             <div class="company-name">
                 <a href="https://apptesters.org/" class="company-link" target="_blank">Apptesters</a>
             </div>
@@ -246,8 +316,263 @@
             </div>
         </div>
 
+        
+
+        <!-- dxsign Section -->
+        <div id="dxsign" class="company-section">
+            <div class="company-name">
+                <a href="https://dxsign.cc/" class="company-link" target="_blank">dxsign</a>
+            </div>
+            <div class="plans-container">
+                <div class="plan-card">
+                    <h3 class="plan-title">Basic Plan</h3>
+                    <p class="plan-price">4.99 USD</p>
+                    <ul class="plan-features">
+                        <li>1 year certificate</li>
+                        <li>Supported Devices: iPhone, iPad, macOS</li>
+                    </ul>
+                    <div class="plan-button-container">
+                        <a href="https://dxsign.cc/" class="plan-button" target="_blank">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Standard Plan</h3>
+                    <p class="plan-price">7.99 USD</p>
+                    <ul class="plan-features">
+                        <li>1 year certificate</li>
+                        <li>Revoke protection</li>
+                        <li>Supported Devices: iPhone, iPad, macOS</li>
+                    </ul>
+                    <div class="plan-button-container">
+                        <a href="https://dxsign.cc/" class="plan-button" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- hertzsign Section -->
+        <div id="hertzsign" class="company-section">
+            <div class="company-name">
+                <a href="https://hertzsign.cc/" class="company-link" target="_blank">hertzsign</a>
+            </div>
+            <div class="plans-container">
+                <div class="plan-card">
+                    <h3 class="plan-title">Regular</h3>
+                    <p class="plan-price">6 USD</p>
+                    <ul class="plan-features">
+                        <li>1 year certificate</li>
+                    </ul>
+                    <div class="plan-button-container">
+                        <a href="https://hertzsign.cc/" class="plan-button" target="_blank">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Instant</h3>
+                    <p class="plan-price">10 USD</p>
+                    <ul class="plan-features">
+                        <li>1 year certificate</li>
+                    </ul>
+                    <div class="plan-button-container">
+                        <a href="https://hertzsign.cc/" class="plan-button" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!-- applep12 Section -->
+        <div id="applep12" class="company-section">
+            <div class="company-name">
+                <a href="https://applep12.com/" class="company-link" target="_blank">Applep12</a>
+            </div>
+            <div class="plans-container">
+                <div class="plan-card">
+                    <h3 class="plan-title">Ultimate</h3>
+                    <p class="plan-price">26 USD</p>
+                    <ul class="plan-features">
+                        <li>Instant Activation</li>
+                        <li>1 year certificate</li>
+                        <li>Revoke protection 300-360 days</li>
+                        <li>Device replacement (only once, within 180 days with Standard Plan)</li>
+                    </ul>
+                    <div class="plan-button-container">
+                        <a href="https://applep12.com/" class="plan-button" target="_blank">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Premium</h3>
+                    <p class="plan-price">20 USD</p>
+                    <ul class="plan-features">
+                        <li>Instant Activation</li>
+                        <li>1 year certificate</li>
+                        <li>Revoke protection 240 days</li>
+                        <li>Device replacement (only once, within 180 days with Basic Plan)</li>
+                    </ul>
+                    <div class="plan-button-container">
+                        <a href="https://applep12.com/" class="plan-button" target="_blank">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Custom</h3>
+                    <p class="plan-price">18 USD</p>
+                    <ul class="plan-features">
+                        <li>1 year certificate</li>
+                        <li>Revoke protection 300-360 days</li>
+                    </ul>
+                    <div class="plan-button-container">
+                        <a href="https://applep12.com/" class="plan-button" target="_blank">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Plus</h3>
+                    <p class="plan-price">16 USD</p>
+                    <ul class="plan-features">
+                        <li>Instant Activation</li>
+                        <li>1 year certificate</li>
+                        <li>Revoke protection 180 days</li>
+                    </ul>
+                    <div class="plan-button-container">
+                        <a href="https://applep12.com/" class="plan-button" target="_blank">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Standard</h3>
+                    <p class="plan-price">14 USD</p>
+                    <ul class="plan-features">
+                        <li>Instant Activation</li>
+                        <li>1 year certificate</li>
+                        <li>Revoke protection 90 days</li>
+                    </ul>
+                    <div class="plan-button-container">
+                        <a href="https://applep12.com/" class="plan-button" target="_blank">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Slow</h3>
+                    <p class="plan-price">10.88 USD</p>
+                    <ul class="plan-features">
+                        <li>1 year certificate</li>
+                        <li>Revoke protection 240 days</li>
+                        <li>Push, HealthKit, VPN Capabilities</li>
+                    </ul>
+                    <div class="plan-button-container">
+                        <a href="https://applep12.com/" class="plan-button" target="_blank">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Basic</h3>
+                    <p class="plan-price">9.88 USD</p>
+                    <ul class="plan-features">
+                        <li>Instant Activation</li>
+                        <li>1 year certificate</li>
+                        <li>Revoke protection 30 days</li>
+                    </ul>
+                    <div class="plan-button-container">
+                        <a href="https://applep12.com/" class="plan-button" target="_blank">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Started</h3>
+                    <p class="plan-price">6.88 USD</p>
+                    <ul class="plan-features">
+                        <li>1 year certificate</li>
+                        <li>Revoke protection 7 days</li>
+                    </ul>
+                    <div class="plan-button-container">
+                        <a href="https://applep12.com/" class="plan-button" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- UDID Registrations Section -->
+        <div id="udidregistrations" class="company-section">
+            <div class="company-name">
+                <a href="https://www.udidregistrations.com/" class="company-link" target="_blank">UDID Registrations</a>
+            </div>
+            <div class="plans-container">
+                <div class="plan-card">
+                    <h3 class="plan-title">Silver</h3>
+                    <p class="plan-price">8.99 USD</p>
+                    <ul class="plan-features">
+                        <li>1 year certificate</li>
+                    </ul>
+                    <div class="plan-button-container">
+                        <a href="https://www.udidregistrations.com/" class="plan-button" target="_blank">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Gold</h3>
+                    <p class="plan-price">14.99 USD</p>
+                    <ul class="plan-features">
+                        <li>1 year certificate</li>
+                        <li>Revoke protection</li>
+                    </ul>
+                    <div class="plan-button-container">
+                        <a href="https://www.udidregistrations.com/" class="plan-button" target="_blank">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Platinum</h3>
+                    <p class="plan-price">19.99 USD</p>
+                    <ul class="plan-features">
+                        <li>1 year certificate</li>
+                        <li>Revoke protection</li>
+                        <li>Online code signing</li>
+                    </ul>
+                    <div class="plan-button-container">
+                        <a href="https://www.udidregistrations.com/" class="plan-button" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- signulous Section -->
+        <div id="signulous" class="company-section">
+            <div class="company-name">
+                <a href="https://www.signulous.com/" class="company-link" target="_blank">Signulous</a>
+            </div>
+            <div class="plans-container">
+                <div class="plan-card">
+                    <h3 class="plan-title">iOS</h3>
+                    <p class="plan-price">19.99 USD</p>
+                    <ul class="plan-features">
+                        <li>1 year certificate</li>
+                        <li>Revoke protection</li>
+                    </ul>
+                    <div class="plan-button-container">
+                        <a href="https://www.signulous.com/" class="plan-button" target="_blank">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">tvOS</h3>
+                    <p class="plan-price">15.99 USD</p>
+                    <ul class="plan-features">
+                        <li>1 year certificate</li>
+                        <li>Revoke protection</li>
+                    </ul>
+                    <div class="plan-button-container">
+                        <a href="https://www.signulous.com/" class="plan-button" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- iOS Rocket Section -->
-        <div class="company-section">
+        <div id="iosrocket" class="company-section">
             <div class="company-name">
                 <a href="https://iosrocket.com/" class="company-link" target="_blank">iOS Rocket</a>
             </div>
@@ -415,216 +740,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- dxsign Section -->
-        <div class="company-section">
-            <div class="company-name">
-                <a href="https://dxsign.cc/" class="company-link" target="_blank">dxsign</a>
-            </div>
-            <div class="plans-container">
-                <div class="plan-card">
-                    <h3 class="plan-title">Basic Plan</h3>
-                    <p class="plan-price">4.99 USD</p>
-                    <ul class="plan-features">
-                        <li>1 year certificate</li>
-                        <li>Supported Devices: iPhone, iPad, macOS</li>
-                    </ul>
-                    <div class="plan-button-container">
-                        <a href="https://dxsign.cc/" class="plan-button" target="_blank">Learn More</a>
-                    </div>
-                </div>
-
-                <div class="plan-card">
-                    <h3 class="plan-title">Standard Plan</h3>
-                    <p class="plan-price">7.99 USD</p>
-                    <ul class="plan-features">
-                        <li>1 year certificate</li>
-                        <li>Revoke protection</li>
-                        <li>Supported Devices: iPhone, iPad, macOS</li>
-                    </ul>
-                    <div class="plan-button-container">
-                        <a href="https://dxsign.cc/" class="plan-button" target="_blank">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- hertzsign Section -->
-        <div class="company-section">
-            <div class="company-name">
-                <a href="https://hertzsign.cc/" class="company-link" target="_blank">hertzsign</a>
-            </div>
-            <div class="plans-container">
-                <div class="plan-card">
-                    <h3 class="plan-title">Regular</h3>
-                    <p class="plan-price">6 USD</p>
-                    <ul class="plan-features">
-                        <li>1 year certificate</li>
-                    </ul>
-                    <div class="plan-button-container">
-                        <a href="https://hertzsign.cc/" class="plan-button" target="_blank">Learn More</a>
-                    </div>
-                </div>
-
-                <div class="plan-card">
-                    <h3 class="plan-title">Instant</h3>
-                    <p class="plan-price">10 USD</p>
-                    <ul class="plan-features">
-                        <li>1 year certificate</li>
-                    </ul>
-                    <div class="plan-button-container">
-                        <a href="https://hertzsign.cc/" class="plan-button" target="_blank">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- signulous Section -->
-        <div class="company-section">
-            <div class="company-name">
-                <a href="https://www.signulous.com/" class="company-link" target="_blank">signulous</a>
-            </div>
-            <div class="plans-container">
-                <div class="plan-card">
-                    <h3 class="plan-title">iOS</h3>
-                    <p class="plan-price">19.99 USD</p>
-                    <ul class="plan-features">
-                        <li>1 year certificate</li>
-                        <li>Revoke protection</li>
-                    </ul>
-                    <div class="plan-button-container">
-                        <a href="https://www.signulous.com/" class="plan-button" target="_blank">Learn More</a>
-                    </div>
-                </div>
-
-                <div class="plan-card">
-                    <h3 class="plan-title">tvOS</h3>
-                    <p class="plan-price">15.99 USD</p>
-                    <ul class="plan-features">
-                        <li>1 year certificate</li>
-                        <li>Revoke protection</li>
-                    </ul>
-                    <div class="plan-button-container">
-                        <a href="https://www.signulous.com/" class="plan-button" target="_blank">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- applep12 Section -->
-        <div class="company-section">
-            <div class="company-name">
-                <a href="https://applep12.com/" class="company-link" target="_blank">applep12</a>
-            </div>
-            <div class="plans-container">
-                <div class="plan-card">
-                    <h3 class="plan-title">Ultimate</h3>
-                    <p class="plan-price">26 USD</p>
-                    <ul class="plan-features">
-                        <li>Instant Activation</li>
-                        <li>1 year certificate</li>
-                        <li>Revoke protection 300-360 days</li>
-                        <li>Device replacement (only once, within 180 days with Standard Plan)</li>
-                    </ul>
-                    <div class="plan-button-container">
-                        <a href="https://applep12.com/" class="plan-button" target="_blank">Learn More</a>
-                    </div>
-                </div>
-
-                <div class="plan-card">
-                    <h3 class="plan-title">Premium</h3>
-                    <p class="plan-price">20 USD</p>
-                    <ul class="plan-features">
-                        <li>Instant Activation</li>
-                        <li>1 year certificate</li>
-                        <li>Revoke protection 240 days</li>
-                        <li>Device replacement (only once, within 180 days with Basic Plan)</li>
-                    </ul>
-                    <div class="plan-button-container">
-                        <a href="https://applep12.com/" class="plan-button" target="_blank">Learn More</a>
-                    </div>
-                </div>
-
-                <div class="plan-card">
-                    <h3 class="plan-title">Custom</h3>
-                    <p class="plan-price">18 USD</p>
-                    <ul class="plan-features">
-                        <li>1 year certificate</li>
-                        <li>Revoke protection 300-360 days</li>
-                    </ul>
-                    <div class="plan-button-container">
-                        <a href="https://applep12.com/" class="plan-button" target="_blank">Learn More</a>
-                    </div>
-                </div>
-
-                <div class="plan-card">
-                    <h3 class="plan-title">Plus</h3>
-                    <p class="plan-price">16 USD</p>
-                    <ul class="plan-features">
-                        <li>Instant Activation</li>
-                        <li>1 year certificate</li>
-                        <li>Revoke protection 180 days</li>
-                    </ul>
-                    <div class="plan-button-container">
-                        <a href="https://applep12.com/" class="plan-button" target="_blank">Learn More</a>
-                    </div>
-                </div>
-
-                <div class="plan-card">
-                    <h3 class="plan-title">Standard</h3>
-                    <p class="plan-price">14 USD</p>
-                    <ul class="plan-features">
-                        <li>Instant Activation</li>
-                        <li>1 year certificate</li>
-                        <li>Revoke protection 90 days</li>
-                    </ul>
-                    <div class="plan-button-container">
-                        <a href="https://applep12.com/" class="plan-button" target="_blank">Learn More</a>
-                    </div>
-                </div>
-
-                <div class="plan-card">
-                    <h3 class="plan-title">Slow</h3>
-                    <p class="plan-price">10.88 USD</p>
-                    <ul class="plan-features">
-                        <li>1 year certificate</li>
-                        <li>Revoke protection 240 days</li>
-                        <li>Push, HealthKit, VPN Capabilities</li>
-                    </ul>
-                    <div class="plan-button-container">
-                        <a href="https://applep12.com/" class="plan-button" target="_blank">Learn More</a>
-                    </div>
-                </div>
-
-                <div class="plan-card">
-                    <h3 class="plan-title">Basic</h3>
-                    <p class="plan-price">9.88 USD</p>
-                    <ul class="plan-features">
-                        <li>Instant Activation</li>
-                        <li>1 year certificate</li>
-                        <li>Revoke protection 30 days</li>
-                    </ul>
-                    <div class="plan-button-container">
-                        <a href="https://applep12.com/" class="plan-button" target="_blank">Learn More</a>
-                    </div>
-                </div>
-
-                <div class="plan-card">
-                    <h3 class="plan-title">Started</h3>
-                    <p class="plan-price">6.88 USD</p>
-                    <ul class="plan-features">
-                        <li>1 year certificate</li>
-                        <li>Revoke protection 7 days</li>
-                    </ul>
-                    <div class="plan-button-container">
-                        <a href="https://applep12.com/" class="plan-button" target="_blank">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- More companies (iOS Rocket, dxsign, Hertzsign, etc.) can follow similar structure -->
-
     </div>
 
 </body>
